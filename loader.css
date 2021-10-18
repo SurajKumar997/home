@@ -7,7 +7,12 @@
       right: 0;
       bottom: 0;
     z-index: 2;
-    background:#184e77;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .preloader p{
     position: absolute;
@@ -18,9 +23,10 @@
     height: 90px;
     
     text-align: center;
-    color: #52b69a;
+    color: #ffffff;
     font-size: 24px;
     z-index: 3;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0, 0.4));
 }
 .loader {
     display: inline-block;
@@ -28,18 +34,20 @@
     height: 30px;
     position: absolute;
     z-index:3;
-    border: 4px solid #52b69a;
+    border: 4px solid #000000;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     animation: loader 2s infinite ease;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0, 0.4));
   }
   .loader-inner {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #d9ed92;
+    background-color: #ffffff;
     animation: loader-inner 2s infinite ease-in;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0, 0.4));
   }
   @keyframes loader {
     0% {
@@ -168,10 +176,10 @@
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(145deg, #00f2ff, #00ffc9, #00ff58, #f9ff00 );
-    background-size: 400% 400%;
-    -webkit-animation: gradientBG 10s ease infinite;
-            animation: gradientBG 10s ease infinite;
+    background: linear-gradient(145deg, #08e665, #00b7ff, #04e204 );
+    background-size: 1200% 1200%;
+    -webkit-animation: gradientBG 20s ease infinite;
+            animation: gradientBG 20s ease infinite;
    }
    @-webkit-keyframes gradientBG {
     0% {
