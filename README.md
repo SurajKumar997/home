@@ -1,2 +1,2 @@
 # Student Portfolio ✨
-![](assets/images/home.png)
+![https://surajkumar997.github.io/home/](assets/images/home.png)
