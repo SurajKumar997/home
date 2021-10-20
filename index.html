@@ -233,6 +233,9 @@
   if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
      return false;
   }
+      if([37,38,39,40].indexOf(e.keyCode) > -1){
+    e.preventDefault();
+  }
 }
 </script>
 <script src="./lb.js"></script>
