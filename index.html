@@ -267,5 +267,21 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);">
 </script>
 <script src="./vanilla-tilt.min.js"></script>
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61794ccec0dace3b"></script>
+    <script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
 </body>
 </html>
