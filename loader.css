@@ -5,7 +5,7 @@
 	background: #fff
 	url('./assets/images/loader.svg')
 	 no-repeat center center;	
-	z-index: 99999;
+	z-index: 999;
 }
   ::-webkit-scrollbar{
     -ms-overflow-style: none;  /* IE and Edge */
